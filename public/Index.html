@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+
+
+<body>
+    <header>
+        <nav class="top-navigation">
+            <div class="logo-container">
+                <img src="https://i.ibb.co/GPBBtmB/Logo-discoverme.png" width="100" height="90">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a href="#">Qui som?</a></li>
+
+
+                    <li><a href="#">Causa</a></li>
+
+
+                    <li><a href="#">Finalitat</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="banner-container">
+            <div class="contenido-banner">
+                <h2>Descobreix cançons ara més fàcilment que mai!</h2>
+            </div>
+
+        </div>
+        <!--Primera pregunta-->
+        <section class="section">
+            <div class="question-container">
+                <h2 class="title-question">Artista preferit?</h2>
+                <input type="text" id="search-artist" class="search" placeholder="Escriu el teu artista preferit...">
+                <button id="artist-btn" class="search-btn">Buscar</button>
+
+                <p>Escull un resultat per la cerca.</p>
+                <div id="artist-suggestion-container"></div>
+            </div>
+            <div class="favorite" id="favorite-artist">
+
+            </div>
+        </section>
+
+        <!-- Segunda pregunta-->
+        <section class="section">
+            <div class="question-container">
+                <h2 class="title-question">Cançó preferida?</h2>
+                <input type="text" id="search-song" class="search" placeholder="Escriu la teva cançó preferida...">
+                <button id="song-btn" class="search-btn">Buscar</button>
+
+                <p>Escull un resultat per la cerca.</p>
+                <div id="song-suggestion-container"></div>
+            </div>
+            <div class="favorite" id="favorite-song">
+
+            </div>
+        </section>
+        <!-- Tercera pregunta-->
+        <section class="section" id="terceraPregunta">
+            <div class="question-container">
+                <h2 class="title-question">Gènere musical preferit?</h2>
+                <select id="select_generos">
+                </select>
+                <p>Escull un resultat per la cerca.</p>
+            </div>
+            <!-- La linia 68 es simplement que creo un espai com en les anteriors preguntes nomes perque ocupi lloc i que tot lo demes quedi be-->
+            <div class="favorite"></div>
+
+
+        </section>
+
+        <section class="section">
+
+            <div class="question-container">
+
+                <button id="send-btn">
+                    <div id="loading" class="loading-hidden"></div>
+                    Buscar recomanació
+                </button>
+            </div>
+            <!-- La linia 68 es simplement que creo un espai com en les anteriors preguntes nomes perque ocupi lloc i que tot lo demes quedi be-->
+            <div class="favorite"></div>
+        </section>
+
+        <section id="recomendationContainer">
+            <h2>Et recomanem...</h2>
+            <div id="recomendation"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h3 class="author">Pol Franco</h3>
+            <p class="info">Treball de recerca de segon de batxillerat</p>
+            <p class="school">Col·legi: Nom del col·legi</p>
+            <div>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Pol Franco | Tots els drets reservats
+        </div>
+    </footer>
+
+
+
+    <script src="public/Recomendador.js"></script>
+
+
+</body>
+
+
+</html>
